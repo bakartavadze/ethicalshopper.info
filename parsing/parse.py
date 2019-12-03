@@ -163,6 +163,5 @@ class GoodOnYou:
 with open('brand_names_to_data_mapping.pkl', 'rb') as f:
     brand_names_to_data_mapping = pickle.load(f)
 
-
 # mapping_in_json = json.dumps(brand_names_to_data_mapping)
 # print(mapping_in_json)
