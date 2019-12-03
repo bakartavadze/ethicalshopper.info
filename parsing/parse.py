@@ -152,16 +152,11 @@ class GoodOnYou:
         if not isinstance(brand_tags, list):
             raise ValueError('Brand tags must be provided in a list')
         data = {}
-        i = 0 # todo: delete
         for brand_tag in brand_tags:
-            i += 1 # todo: delete
             mapping = self._get_brand_name_to_data_mapping(brand_tag)
             key = next(iter(mapping))
-            if 'NA ' in key:
-                print('FAILED', i, brand_tag, 'key=', key) # todo: delete
-            else:
-                print(i, brand_tag) # todo: delete
             data[key] = deepcopy(mapping[key])
+            # wait 3 seconds to allow a page to load
             time.sleep(3)
         return data
 
