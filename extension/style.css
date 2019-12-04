@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Sifonn Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/SIFONN_PRO.woff') format('woff');
+}
+
+
+body {
+    background: url(images/background.png);
+    
+}
+
+.info_row {
+    width: 320px;
+    /* font-family: 'SIFONN_PRO'; */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#brand_name{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+#brand_price {
+    color: white;
+    text-align: center;
+    font-size:16px;
+}
+
+#divider_horizontal_line {
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 2px;
+}
+
+#brand_rating_header {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: auto;
+}
+
+#rating_title {
+    float: left;
+    color: white;
+    font-size:16px;
+
+}
+
+#rating_graphic {
+    float: right;
+    color: white;
+    font-size:16px;
+}
+
+.body_of_text {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-align:justify;
+}
+
+.category_rating{
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: auto;
+}
+
+
+
+.category_rating_title {
+    float: left;
+    color: white;
+    font-size:16px;
+
+}
+
+.category_rating_graphic {
+    float: right;
+    color: white;
+    font-size:16px;
+}
+
+#footer_info_links {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: auto;
+}
+
+#brand_read_more {
+    float: left;
+    color: white;
+    font-size:16px;
+  
+}
+
+#how_we_rate {
+    float: right;
+    color: white;
+    font-size:16px;
+    
+}
+
+#how_we_rate a {
+    color: white;
+}
+#brand_read_more a {
+    color: white;
+}
