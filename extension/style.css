@@ -5,19 +5,17 @@
     src: url('../fonts/SIFONN_PRO.woff') format('woff');
 }
 
-
 body {
     background: url(images/background.png);
-    
 }
 
 .info_row {
     width: 320px;
     /* font-family: 'SIFONN_PRO'; */
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+    -webkit-user-select: none;      
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 #brand_name{
@@ -31,6 +29,7 @@ body {
     color: white;
     text-align: center;
     font-size:16px;
+    display: none;
 }
 
 #divider_horizontal_line {
@@ -56,7 +55,6 @@ body {
     float: left;
     color: white;
     font-size:16px;
-
 }
 
 #rating_graphic {
@@ -79,8 +77,6 @@ body {
     margin-right: 10px;
     overflow: auto;
 }
-
-
 
 .category_rating_title {
     float: left;
@@ -106,19 +102,29 @@ body {
     float: left;
     color: white;
     font-size:16px;
-  
+    display: none;
 }
 
 #how_we_rate {
     float: right;
     color: white;
     font-size:16px;
-    
 }
 
 #how_we_rate a {
     color: white;
+    text-decoration: none;
 }
 #brand_read_more a {
     color: white;
+    text-decoration: none;
+}
+
+.lit-icon {
+    color: #f7cd65;
+}
+
+.fa-external-link-alt {
+    font-size: 14px;
+    color: #84a8c4;
 }
