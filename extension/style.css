@@ -1,21 +1,18 @@
-@font-face {
-    font-family: 'Sifonn Pro';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/SIFONN_PRO.woff') format('woff');
-}
-
 body {
     background: url(images/background.png);
 }
 
 .info_row {
     width: 320px;
-    /* font-family: 'SIFONN_PRO'; */
+    font-family: 'Gotham Rounded Medium';
     -webkit-user-select: none;      
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
+}
+
+.body_of_text {
+    font-family: 'Gotham Rounded Book';
 }
 
 #brand_name{
@@ -23,6 +20,7 @@ body {
     text-align: center;
     font-size: 24px;
     margin-bottom: 6px;
+    
 }
 
 #brand_price {
@@ -82,7 +80,6 @@ body {
     float: left;
     color: white;
     font-size:16px;
-
 }
 
 .category_rating_graphic {
@@ -127,4 +124,16 @@ body {
 .fa-external-link-alt {
     font-size: 14px;
     color: #84a8c4;
+}
+
+.fa-external-link-alt:hover {
+    color: white;
+}
+
+.fa-star:hover {
+    opacity: 0.8;
+}
+
+.fa-dollar-sign:hover {
+    opacity: 0.8;
 }
