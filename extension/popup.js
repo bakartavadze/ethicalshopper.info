@@ -16,6 +16,7 @@ function display_no_info_available() {
 }
 
 function fill_popup_with_info(response) {
+  fix_spacing_between_elements();
   set_brand_name(response.name);
   // if no price info available
   if (response.data['price']) {
@@ -42,11 +43,17 @@ function set_rating_title(title) {
 }
 
 function set_rating_message(message) {
-  document.querySelector("#brand_rating_body > p").innerText = message;
+  document.querySelector("#brand_rating_body > span").innerText = message;
 }
 
 function set_brand_message(message) {
-  document.querySelector("#brand_message > p").innerText = message;
+  document.querySelector("#brand_message > span").innerText = message;
+}
+
+function fix_spacing_between_elements() {
+  document.getElementById('brand_name').style.marginBottom = "6px";
+  document.getElementById('brand_rating_body').style.marginTop = "12px";
+  document.getElementById('brand_message').style.marginBottom = "15px";
 }
 
 function set_brand_read_more_url(url){

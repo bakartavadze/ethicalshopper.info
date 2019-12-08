@@ -19,7 +19,7 @@ body {
     color: white;
     text-align: center;
     font-size: 24px;
-    margin-bottom: 6px;
+    margin-top: 16px;
     
 }
 
@@ -137,3 +137,4 @@ body {
 .fa-dollar-sign:hover {
     opacity: 0.8;
 }
+
