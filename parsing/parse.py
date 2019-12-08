@@ -163,40 +163,16 @@ class GoodOnYou:
 
     def brand_url_to_brand_name_mapping(self, brand_names_to_data_mapping) -> dict:
         mapping = {}
-        i = 0 # todo delete
         for brand_name in brand_names_to_data_mapping:
             GoodOnYou_url = brand_names_to_data_mapping[brand_name]['GoodOnYou_url']
             self._driver.get(GoodOnYou_url)
             html = BeautifulSoup(self._driver.page_source, 'html.parser')
             key = brand_url = self._get_brand_website(html)
-            print(i, brand_name, brand_url)
-            i += 1
             if not brand_url:
                 key = GoodOnYou_url
             mapping[key] = brand_name
             time.sleep(3)
         return mapping
 
-    def tmp(self, brand_names_to_data_mapping):
-        mapping = {}
-        for brand_name in brand_names_to_data_mapping:
-            # GoodOnYou_url = brand_names_to_data_mapping[brand_name]['GoodOnYou_url']
-            key = 'WEBSITE ' + brand_name
-            mapping[key] = brand_name
-        return mapping
 
-# with open('brand_names_to_data_mapping.pkl', 'rb') as f:
-#     brand_names_to_data_mapping = pickle.load(f)
-
-# mapping_in_json = json.dumps(brand_urls_to_brand_names)
-# print(mapping_in_json)
-
-# with open("brand_urls_to_brand_names_json.txt") as f1:
-#     urls_to_names = json.load(f1)
-# with open("brand_names_to_data_mapping_json.txt") as f2:
-#     names_to_data = json.load(f2)
-
-# for url in urls_to_names:
-#     if urls_to_names[url] not in names_to_data:
-#         print(urls_to_names[url])
 
