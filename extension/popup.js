@@ -50,6 +50,7 @@ function set_brand_message(message) {
   document.querySelector("#brand_message > span").innerText = message;
 }
 
+// used only when data is available to the popup
 function fix_spacing_between_elements() {
   document.getElementById('brand_name').style.marginBottom = "6px";
   document.getElementById('brand_rating_body').style.marginTop = "12px";

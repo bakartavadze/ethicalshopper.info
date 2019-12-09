@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener(
         if ((request.from === 'popup') && (request.subject === 'brand info')) {
             chrome.storage.local.get('urls_to_names', function(urls_to_names_mapping) {
                 urls_to_names = urls_to_names_mapping
-                // check if a known bran url is found
+                // check if a known brand url is found
                 var found = false
                 for (var url in urls_to_names['urls_to_names']){
                     var current_url = window.location.href.toString();
